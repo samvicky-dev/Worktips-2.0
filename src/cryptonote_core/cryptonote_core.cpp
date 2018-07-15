@@ -1415,6 +1415,10 @@ namespace cryptonote
     static const char subdir[] = "source"; // because it can never be simple
 #endif
 
+    MCDEBUG("updates", "Skipping checking for a new " << software << " version - not configured for Worktips Coin");
+    //CHANGE ME
+    return true;
+
     if (m_offline)
       return true;
 
